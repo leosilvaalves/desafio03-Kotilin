@@ -30,7 +30,11 @@
         android:id="@+id/homeHQFragment"
         android:name="br.com.desafio03ws.HomeHQFragment"
         android:label="fragment_home_h_q"
-        tools:layout="@layout/fragment_home_h_q" />
+        tools:layout="@layout/fragment_home_h_q" >
+        <action
+            android:id="@+id/action_homeHQFragment_to_detalhesHQFragment"
+            app:destination="@id/detalhesHQFragment" />
+    </fragment>
     <fragment
         android:id="@+id/registerFragment"
         android:name="br.com.desafio03ws.RegisterFragment"
@@ -43,4 +47,9 @@
             android:id="@+id/action_registerFragment_to_homeHQFragment"
             app:destination="@id/homeHQFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/detalhesHQFragment"
+        android:name="br.com.desafio03ws.DetalhesHQFragment"
+        android:label="fragment_detalhes_h_q"
+        tools:layout="@layout/fragment_detalhes_h_q" />
 </navigation>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetalhesHQFragment"
+    android:orientation="vertical"
+    android:padding="20dp"
+    >
+
+
+
+<ImageView
+    android:id="@+id/img_quadrinho"
+    android:layout_marginTop="45dp"
+    android:layout_width="160dp"
+    android:layout_height="190dp"
+
+    />
+
+<TextView
+    android:id="@+id/tv_titulo"
+    android:textSize="30dp"
+    android:textColor="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+/>
+
+    <TextView
+        android:id="@+id/tv_descricao"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:id="@+id/tv_publicacao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        />
+
+    <TextView
+        android:id="@+id/tv_preco"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        />
+
+    <TextView
+        android:id="@+id/tv_paginas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        />
+
+    view.tv_titulo.text = hqDetail.title
+    view.tv_descricao.text = hqDetail.description
+    view.tv_price.text = hqDetail.prices[0].price
+    view.tv_pages.text = hqDetail.pageCount.toString()
+    view.tv_published.text = hqDetail.dates[0].date
+
+</LinearLayout>
